@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69E600B51C54F2D9003403F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E600B41C54F2D9003403F7 /* QuartzCore.framework */; };
+		69F2CD841C572779008BF43D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD571C572779008BF43D /* AppDelegate.m */; };
+		69F2CD851C572779008BF43D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CD581C572779008BF43D /* Assets.xcassets */; };
+		69F2CD881C572779008BF43D /* CellViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD5E1C572779008BF43D /* CellViewCollectionViewCell.m */; };
+		69F2CD891C572779008BF43D /* CellViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CD5F1C572779008BF43D /* CellViewCollectionViewCell.xib */; };
+		69F2CD8A1C572779008BF43D /* ColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD611C572779008BF43D /* ColorPicker.m */; };
+		69F2CD8B1C572779008BF43D /* CuteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD631C572779008BF43D /* CuteViewController.m */; };
+		69F2CD8C1C572779008BF43D /* CuteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CD641C572779008BF43D /* CuteViewController.xib */; };
+		69F2CD8D1C572779008BF43D /* FlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD671C572779008BF43D /* FlowLayout.m */; };
+		69F2CD8F1C572779008BF43D /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD6A1C572779008BF43D /* Line.m */; };
+		69F2CD901C572779008BF43D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD6B1C572779008BF43D /* main.m */; };
+		69F2CD911C572779008BF43D /* MyCuteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD6D1C572779008BF43D /* MyCuteView.m */; };
+		69F2CD921C572779008BF43D /* PickerViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD6F1C572779008BF43D /* PickerViewDemo.m */; };
+		69F2CD931C572779008BF43D /* PickerViewDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CD701C572779008BF43D /* PickerViewDemo.xib */; };
+		69F2CD941C572779008BF43D /* Tab2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD721C572779008BF43D /* Tab2ViewController.m */; };
+		69F2CD951C572779008BF43D /* Tab2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CD731C572779008BF43D /* Tab2ViewController.xib */; };
+		69F2CD961C572779008BF43D /* Tab3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD751C572779008BF43D /* Tab3ViewController.m */; };
+		69F2CD971C572779008BF43D /* Tab3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CD761C572779008BF43D /* Tab3ViewController.xib */; };
+		69F2CD981C572779008BF43D /* Tab4CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD781C572779008BF43D /* Tab4CollectionViewController.m */; };
+		69F2CD991C572779008BF43D /* Tab4CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CD791C572779008BF43D /* Tab4CollectionViewController.xib */; };
+		69F2CD9A1C572779008BF43D /* TouchDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD7B1C572779008BF43D /* TouchDrawView.m */; };
+		69F2CD9C1C572779008BF43D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD7F1C572779008BF43D /* ViewController.m */; };
+		69F2CD9D1C572779008BF43D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CD801C572779008BF43D /* ViewController.xib */; };
+		69F2CD9E1C572779008BF43D /* WhiteBoardDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD821C572779008BF43D /* WhiteBoardDemo.m */; };
+		69F2CD9F1C572779008BF43D /* WhiteBoardDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CD831C572779008BF43D /* WhiteBoardDemo.xib */; };
+		69F2CDA71C5728AB008BF43D /* UIButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CDA61C5728AB008BF43D /* UIButton+CountDown.m */; };
+		69F2CDAB1C5728E3008BF43D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CDA91C5728E3008BF43D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69E58F261C45EC7A007F9876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69E58F041C45EC7A007F9876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69E58F0B1C45EC7A007F9876;
+			remoteInfo = 3DTouchDemo;
+		};
+		69E58F311C45EC7A007F9876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69E58F041C45EC7A007F9876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69E58F0B1C45EC7A007F9876;
+			remoteInfo = 3DTouchDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		69E58F0C1C45EC7A007F9876 /* YaweiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaweiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E58F251C45EC7A007F9876 /* YaweiTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaweiTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E58F301C45EC7A007F9876 /* YaweiTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaweiTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E600B41C54F2D9003403F7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		69F2CD561C572779008BF43D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		69F2CD571C572779008BF43D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		69F2CD581C572779008BF43D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69F2CD5D1C572779008BF43D /* CellViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellViewCollectionViewCell.h; sourceTree = "<group>"; };
+		69F2CD5E1C572779008BF43D /* CellViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellViewCollectionViewCell.m; sourceTree = "<group>"; };
+		69F2CD5F1C572779008BF43D /* CellViewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellViewCollectionViewCell.xib; sourceTree = "<group>"; };
+		69F2CD601C572779008BF43D /* ColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPicker.h; sourceTree = "<group>"; };
+		69F2CD611C572779008BF43D /* ColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPicker.m; sourceTree = "<group>"; };
+		69F2CD621C572779008BF43D /* CuteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuteViewController.h; sourceTree = "<group>"; };
+		69F2CD631C572779008BF43D /* CuteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuteViewController.m; sourceTree = "<group>"; };
+		69F2CD641C572779008BF43D /* CuteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CuteViewController.xib; sourceTree = "<group>"; };
+		69F2CD651C572779008BF43D /* DEBUG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBUG.h; sourceTree = "<group>"; };
+		69F2CD661C572779008BF43D /* FlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowLayout.h; sourceTree = "<group>"; };
+		69F2CD671C572779008BF43D /* FlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowLayout.m; sourceTree = "<group>"; };
+		69F2CD681C572779008BF43D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69F2CD691C572779008BF43D /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		69F2CD6A1C572779008BF43D /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		69F2CD6B1C572779008BF43D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69F2CD6C1C572779008BF43D /* MyCuteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCuteView.h; sourceTree = "<group>"; };
+		69F2CD6D1C572779008BF43D /* MyCuteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCuteView.m; sourceTree = "<group>"; };
+		69F2CD6E1C572779008BF43D /* PickerViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewDemo.h; sourceTree = "<group>"; };
+		69F2CD6F1C572779008BF43D /* PickerViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewDemo.m; sourceTree = "<group>"; };
+		69F2CD701C572779008BF43D /* PickerViewDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewDemo.xib; sourceTree = "<group>"; };
+		69F2CD711C572779008BF43D /* Tab2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab2ViewController.h; sourceTree = "<group>"; };
+		69F2CD721C572779008BF43D /* Tab2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab2ViewController.m; sourceTree = "<group>"; };
+		69F2CD731C572779008BF43D /* Tab2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tab2ViewController.xib; sourceTree = "<group>"; };
+		69F2CD741C572779008BF43D /* Tab3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab3ViewController.h; sourceTree = "<group>"; };
+		69F2CD751C572779008BF43D /* Tab3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab3ViewController.m; sourceTree = "<group>"; };
+		69F2CD761C572779008BF43D /* Tab3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tab3ViewController.xib; sourceTree = "<group>"; };
+		69F2CD771C572779008BF43D /* Tab4CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab4CollectionViewController.h; sourceTree = "<group>"; };
+		69F2CD781C572779008BF43D /* Tab4CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab4CollectionViewController.m; sourceTree = "<group>"; };
+		69F2CD791C572779008BF43D /* Tab4CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tab4CollectionViewController.xib; sourceTree = "<group>"; };
+		69F2CD7A1C572779008BF43D /* TouchDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchDrawView.h; sourceTree = "<group>"; };
+		69F2CD7B1C572779008BF43D /* TouchDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchDrawView.m; sourceTree = "<group>"; };
+		69F2CD7E1C572779008BF43D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		69F2CD7F1C572779008BF43D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		69F2CD801C572779008BF43D /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		69F2CD811C572779008BF43D /* WhiteBoardDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteBoardDemo.h; sourceTree = "<group>"; };
+		69F2CD821C572779008BF43D /* WhiteBoardDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteBoardDemo.m; sourceTree = "<group>"; };
+		69F2CD831C572779008BF43D /* WhiteBoardDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WhiteBoardDemo.xib; sourceTree = "<group>"; };
+		69F2CDA51C5728AB008BF43D /* UIButton+CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CountDown.h"; sourceTree = "<group>"; };
+		69F2CDA61C5728AB008BF43D /* UIButton+CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CountDown.m"; sourceTree = "<group>"; };
+		69F2CDAA1C5728E3008BF43D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69E58F091C45EC7A007F9876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E600B51C54F2D9003403F7 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E58F221C45EC7A007F9876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E58F2D1C45EC7A007F9876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69E58F031C45EC7A007F9876 = {
+			isa = PBXGroup;
+			children = (
+				69F2CD551C572779008BF43D /* YaweiTest */,
+				69E600B41C54F2D9003403F7 /* QuartzCore.framework */,
+				69E58F0D1C45EC7A007F9876 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69E58F0D1C45EC7A007F9876 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69E58F0C1C45EC7A007F9876 /* YaweiTest.app */,
+				69E58F251C45EC7A007F9876 /* YaweiTest.xctest */,
+				69E58F301C45EC7A007F9876 /* YaweiTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69F2CD551C572779008BF43D /* YaweiTest */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CD561C572779008BF43D /* AppDelegate.h */,
+				69F2CD571C572779008BF43D /* AppDelegate.m */,
+				69F2CD651C572779008BF43D /* DEBUG.h */,
+				69F2CDA01C57279B008BF43D /* 条目一 */,
+				69F2CDA11C5727A9008BF43D /* 条目二 */,
+				69F2CDA21C5727BC008BF43D /* 条目三 */,
+				69F2CDA31C5727DB008BF43D /* 条目四 */,
+				69F2CDA41C57288B008BF43D /* ButtonCategory */,
+				69F2CD581C572779008BF43D /* Assets.xcassets */,
+				69F2CDA91C5728E3008BF43D /* LaunchScreen.storyboard */,
+				69F2CD681C572779008BF43D /* Info.plist */,
+				69F2CDA81C5728C2008BF43D /* Supporting Files */,
+			);
+			path = YaweiTest;
+			sourceTree = "<group>";
+		};
+		69F2CDA01C57279B008BF43D /* 条目一 */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CD7E1C572779008BF43D /* ViewController.h */,
+				69F2CD7F1C572779008BF43D /* ViewController.m */,
+				69F2CD801C572779008BF43D /* ViewController.xib */,
+				69F2CDAE1C572945008BF43D /* WhiteBoardDemo */,
+				69F2CDAC1C572903008BF43D /* CuteView */,
+				69F2CDAD1C57291F008BF43D /* PickerViewDemo */,
+			);
+			name = "条目一";
+			sourceTree = "<group>";
+		};
+		69F2CDA11C5727A9008BF43D /* 条目二 */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CD711C572779008BF43D /* Tab2ViewController.h */,
+				69F2CD721C572779008BF43D /* Tab2ViewController.m */,
+				69F2CD731C572779008BF43D /* Tab2ViewController.xib */,
+			);
+			name = "条目二";
+			sourceTree = "<group>";
+		};
+		69F2CDA21C5727BC008BF43D /* 条目三 */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CD741C572779008BF43D /* Tab3ViewController.h */,
+				69F2CD751C572779008BF43D /* Tab3ViewController.m */,
+				69F2CD761C572779008BF43D /* Tab3ViewController.xib */,
+			);
+			name = "条目三";
+			sourceTree = "<group>";
+		};
+		69F2CDA31C5727DB008BF43D /* 条目四 */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CD771C572779008BF43D /* Tab4CollectionViewController.h */,
+				69F2CD781C572779008BF43D /* Tab4CollectionViewController.m */,
+				69F2CD791C572779008BF43D /* Tab4CollectionViewController.xib */,
+				69F2CDAF1C572FFA008BF43D /* Cells */,
+				69F2CDB01C573014008BF43D /* Layout */,
+			);
+			name = "条目四";
+			sourceTree = "<group>";
+		};
+		69F2CDA41C57288B008BF43D /* ButtonCategory */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CDA51C5728AB008BF43D /* UIButton+CountDown.h */,
+				69F2CDA61C5728AB008BF43D /* UIButton+CountDown.m */,
+			);
+			name = ButtonCategory;
+			sourceTree = "<group>";
+		};
+		69F2CDA81C5728C2008BF43D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CD6B1C572779008BF43D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69F2CDAC1C572903008BF43D /* CuteView */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CD6C1C572779008BF43D /* MyCuteView.h */,
+				69F2CD6D1C572779008BF43D /* MyCuteView.m */,
+				69F2CD621C572779008BF43D /* CuteViewController.h */,
+				69F2CD631C572779008BF43D /* CuteViewController.m */,
+				69F2CD641C572779008BF43D /* CuteViewController.xib */,
+			);
+			name = CuteView;
+			sourceTree = "<group>";
+		};
+		69F2CDAD1C57291F008BF43D /* PickerViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CD6E1C572779008BF43D /* PickerViewDemo.h */,
+				69F2CD6F1C572779008BF43D /* PickerViewDemo.m */,
+				69F2CD701C572779008BF43D /* PickerViewDemo.xib */,
+			);
+			name = PickerViewDemo;
+			sourceTree = "<group>";
+		};
+		69F2CDAE1C572945008BF43D /* WhiteBoardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CD691C572779008BF43D /* Line.h */,
+				69F2CD6A1C572779008BF43D /* Line.m */,
+				69F2CD601C572779008BF43D /* ColorPicker.h */,
+				69F2CD611C572779008BF43D /* ColorPicker.m */,
+				69F2CD7A1C572779008BF43D /* TouchDrawView.h */,
+				69F2CD7B1C572779008BF43D /* TouchDrawView.m */,
+				69F2CD811C572779008BF43D /* WhiteBoardDemo.h */,
+				69F2CD821C572779008BF43D /* WhiteBoardDemo.m */,
+				69F2CD831C572779008BF43D /* WhiteBoardDemo.xib */,
+			);
+			name = WhiteBoardDemo;
+			sourceTree = "<group>";
+		};
+		69F2CDAF1C572FFA008BF43D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CD5D1C572779008BF43D /* CellViewCollectionViewCell.h */,
+				69F2CD5E1C572779008BF43D /* CellViewCollectionViewCell.m */,
+				69F2CD5F1C572779008BF43D /* CellViewCollectionViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		69F2CDB01C573014008BF43D /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CD661C572779008BF43D /* FlowLayout.h */,
+				69F2CD671C572779008BF43D /* FlowLayout.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69E58F0B1C45EC7A007F9876 /* YaweiTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69E58F391C45EC7A007F9876 /* Build configuration list for PBXNativeTarget "YaweiTest" */;
+			buildPhases = (
+				69E58F081C45EC7A007F9876 /* Sources */,
+				69E58F091C45EC7A007F9876 /* Frameworks */,
+				69E58F0A1C45EC7A007F9876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YaweiTest;
+			productName = 3DTouchDemo;
+			productReference = 69E58F0C1C45EC7A007F9876 /* YaweiTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69E58F241C45EC7A007F9876 /* YaweiTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69E58F3C1C45EC7A007F9876 /* Build configuration list for PBXNativeTarget "YaweiTestTests" */;
+			buildPhases = (
+				69E58F211C45EC7A007F9876 /* Sources */,
+				69E58F221C45EC7A007F9876 /* Frameworks */,
+				69E58F231C45EC7A007F9876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69E58F271C45EC7A007F9876 /* PBXTargetDependency */,
+			);
+			name = YaweiTestTests;
+			productName = 3DTouchDemoTests;
+			productReference = 69E58F251C45EC7A007F9876 /* YaweiTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69E58F2F1C45EC7A007F9876 /* YaweiTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69E58F3F1C45EC7A007F9876 /* Build configuration list for PBXNativeTarget "YaweiTestUITests" */;
+			buildPhases = (
+				69E58F2C1C45EC7A007F9876 /* Sources */,
+				69E58F2D1C45EC7A007F9876 /* Frameworks */,
+				69E58F2E1C45EC7A007F9876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69E58F321C45EC7A007F9876 /* PBXTargetDependency */,
+			);
+			name = YaweiTestUITests;
+			productName = 3DTouchDemoUITests;
+			productReference = 69E58F301C45EC7A007F9876 /* YaweiTest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69E58F041C45EC7A007F9876 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = hzzhanyawei;
+				TargetAttributes = {
+					69E58F0B1C45EC7A007F9876 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = XWV65WS8FZ;
+					};
+					69E58F241C45EC7A007F9876 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 69E58F0B1C45EC7A007F9876;
+					};
+					69E58F2F1C45EC7A007F9876 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 69E58F0B1C45EC7A007F9876;
+					};
+				};
+			};
+			buildConfigurationList = 69E58F071C45EC7A007F9876 /* Build configuration list for PBXProject "YaweiTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69E58F031C45EC7A007F9876;
+			productRefGroup = 69E58F0D1C45EC7A007F9876 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69E58F0B1C45EC7A007F9876 /* YaweiTest */,
+				69E58F241C45EC7A007F9876 /* YaweiTestTests */,
+				69E58F2F1C45EC7A007F9876 /* YaweiTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69E58F0A1C45EC7A007F9876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F2CD9F1C572779008BF43D /* WhiteBoardDemo.xib in Resources */,
+				69F2CD951C572779008BF43D /* Tab2ViewController.xib in Resources */,
+				69F2CD8C1C572779008BF43D /* CuteViewController.xib in Resources */,
+				69F2CD851C572779008BF43D /* Assets.xcassets in Resources */,
+				69F2CD9D1C572779008BF43D /* ViewController.xib in Resources */,
+				69F2CD931C572779008BF43D /* PickerViewDemo.xib in Resources */,
+				69F2CD971C572779008BF43D /* Tab3ViewController.xib in Resources */,
+				69F2CD891C572779008BF43D /* CellViewCollectionViewCell.xib in Resources */,
+				69F2CDAB1C5728E3008BF43D /* LaunchScreen.storyboard in Resources */,
+				69F2CD991C572779008BF43D /* Tab4CollectionViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E58F231C45EC7A007F9876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E58F2E1C45EC7A007F9876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69E58F081C45EC7A007F9876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F2CD921C572779008BF43D /* PickerViewDemo.m in Sources */,
+				69F2CD8B1C572779008BF43D /* CuteViewController.m in Sources */,
+				69F2CD941C572779008BF43D /* Tab2ViewController.m in Sources */,
+				69F2CD881C572779008BF43D /* CellViewCollectionViewCell.m in Sources */,
+				69F2CD8F1C572779008BF43D /* Line.m in Sources */,
+				69F2CD9A1C572779008BF43D /* TouchDrawView.m in Sources */,
+				69F2CD981C572779008BF43D /* Tab4CollectionViewController.m in Sources */,
+				69F2CD911C572779008BF43D /* MyCuteView.m in Sources */,
+				69F2CD901C572779008BF43D /* main.m in Sources */,
+				69F2CD961C572779008BF43D /* Tab3ViewController.m in Sources */,
+				69F2CD8A1C572779008BF43D /* ColorPicker.m in Sources */,
+				69F2CDA71C5728AB008BF43D /* UIButton+CountDown.m in Sources */,
+				69F2CD9C1C572779008BF43D /* ViewController.m in Sources */,
+				69F2CD9E1C572779008BF43D /* WhiteBoardDemo.m in Sources */,
+				69F2CD841C572779008BF43D /* AppDelegate.m in Sources */,
+				69F2CD8D1C572779008BF43D /* FlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E58F211C45EC7A007F9876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E58F2C1C45EC7A007F9876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69E58F271C45EC7A007F9876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69E58F0B1C45EC7A007F9876 /* YaweiTest */;
+			targetProxy = 69E58F261C45EC7A007F9876 /* PBXContainerItemProxy */;
+		};
+		69E58F321C45EC7A007F9876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69E58F0B1C45EC7A007F9876 /* YaweiTest */;
+			targetProxy = 69E58F311C45EC7A007F9876 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69F2CDA91C5728E3008BF43D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69F2CDAA1C5728E3008BF43D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69E58F371C45EC7A007F9876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		69E58F381C45EC7A007F9876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69E58F3A1C45EC7A007F9876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = YaweiTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.zhanyawei.Test;
+				PRODUCT_NAME = YaweiTest;
+			};
+			name = Debug;
+		};
+		69E58F3B1C45EC7A007F9876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = YaweiTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.zhanyawei.Test;
+				PRODUCT_NAME = YaweiTest;
+			};
+			name = Release;
+		};
+		69E58F3D1C45EC7A007F9876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = 3DTouchDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Netease.-DTouchDemoTests";
+				PRODUCT_NAME = YaweiTest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaweiTest.app/YaweiTest";
+			};
+			name = Debug;
+		};
+		69E58F3E1C45EC7A007F9876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = 3DTouchDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Netease.-DTouchDemoTests";
+				PRODUCT_NAME = YaweiTest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaweiTest.app/YaweiTest";
+			};
+			name = Release;
+		};
+		69E58F401C45EC7A007F9876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = 3DTouchDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Netease.-DTouchDemoUITests";
+				PRODUCT_NAME = YaweiTest;
+				TEST_TARGET_NAME = 3DTouchDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		69E58F411C45EC7A007F9876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = 3DTouchDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Netease.-DTouchDemoUITests";
+				PRODUCT_NAME = YaweiTest;
+				TEST_TARGET_NAME = 3DTouchDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69E58F071C45EC7A007F9876 /* Build configuration list for PBXProject "YaweiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E58F371C45EC7A007F9876 /* Debug */,
+				69E58F381C45EC7A007F9876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69E58F391C45EC7A007F9876 /* Build configuration list for PBXNativeTarget "YaweiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E58F3A1C45EC7A007F9876 /* Debug */,
+				69E58F3B1C45EC7A007F9876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69E58F3C1C45EC7A007F9876 /* Build configuration list for PBXNativeTarget "YaweiTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E58F3D1C45EC7A007F9876 /* Debug */,
+				69E58F3E1C45EC7A007F9876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69E58F3F1C45EC7A007F9876 /* Build configuration list for PBXNativeTarget "YaweiTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E58F401C45EC7A007F9876 /* Debug */,
+				69E58F411C45EC7A007F9876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69E58F041C45EC7A007F9876 /* Project object */;
+}
