@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		69E600B51C54F2D9003403F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E600B41C54F2D9003403F7 /* QuartzCore.framework */; };
+		69ECC5321C59B84A00E8954C /* 3DTouchDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ECC5241C59B84A00E8954C /* 3DTouchDemo.m */; };
+		69ECC5331C59B84B00E8954C /* 3DTouchDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ECC5251C59B84A00E8954C /* 3DTouchDemo.xib */; };
+		69ECC5341C59B84B00E8954C /* PeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ECC5271C59B84A00E8954C /* PeekViewController.m */; };
+		69ECC5351C59B84B00E8954C /* PeekViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ECC5281C59B84A00E8954C /* PeekViewController.xib */; };
+		69ECC5361C59B84B00E8954C /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ECC52A1C59B84A00E8954C /* PopViewController.m */; };
+		69ECC5371C59B84B00E8954C /* PopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ECC52B1C59B84A00E8954C /* PopViewController.xib */; };
+		69ECC5381C59B84B00E8954C /* OneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ECC52D1C59B84A00E8954C /* OneCell.m */; };
+		69ECC5391C59B84B00E8954C /* OneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ECC52E1C59B84A00E8954C /* OneCell.xib */; };
+		69ECC53A1C59B84B00E8954C /* TwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ECC5301C59B84A00E8954C /* TwoCell.m */; };
+		69ECC53B1C59B84B00E8954C /* TwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ECC5311C59B84A00E8954C /* TwoCell.xib */; };
 		69F2CD841C572779008BF43D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD571C572779008BF43D /* AppDelegate.m */; };
 		69F2CD851C572779008BF43D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CD581C572779008BF43D /* Assets.xcassets */; };
 		69F2CD881C572779008BF43D /* CellViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD5E1C572779008BF43D /* CellViewCollectionViewCell.m */; };
@@ -58,6 +68,21 @@
 		69E58F251C45EC7A007F9876 /* YaweiTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaweiTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E58F301C45EC7A007F9876 /* YaweiTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaweiTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E600B41C54F2D9003403F7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		69ECC5231C59B84A00E8954C /* 3DTouchDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 3DTouchDemo.h; sourceTree = "<group>"; };
+		69ECC5241C59B84A00E8954C /* 3DTouchDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 3DTouchDemo.m; sourceTree = "<group>"; };
+		69ECC5251C59B84A00E8954C /* 3DTouchDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = 3DTouchDemo.xib; sourceTree = "<group>"; };
+		69ECC5261C59B84A00E8954C /* PeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeekViewController.h; sourceTree = "<group>"; };
+		69ECC5271C59B84A00E8954C /* PeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeekViewController.m; sourceTree = "<group>"; };
+		69ECC5281C59B84A00E8954C /* PeekViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeekViewController.xib; sourceTree = "<group>"; };
+		69ECC5291C59B84A00E8954C /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		69ECC52A1C59B84A00E8954C /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		69ECC52B1C59B84A00E8954C /* PopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopViewController.xib; sourceTree = "<group>"; };
+		69ECC52C1C59B84A00E8954C /* OneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneCell.h; sourceTree = "<group>"; };
+		69ECC52D1C59B84A00E8954C /* OneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneCell.m; sourceTree = "<group>"; };
+		69ECC52E1C59B84A00E8954C /* OneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneCell.xib; sourceTree = "<group>"; };
+		69ECC52F1C59B84A00E8954C /* TwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoCell.h; sourceTree = "<group>"; };
+		69ECC5301C59B84A00E8954C /* TwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoCell.m; sourceTree = "<group>"; };
+		69ECC5311C59B84A00E8954C /* TwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoCell.xib; sourceTree = "<group>"; };
 		69F2CD561C572779008BF43D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69F2CD571C572779008BF43D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		69F2CD581C572779008BF43D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -148,6 +173,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		69ECC53C1C59B85200E8954C /* 3DTouchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				69ECC5231C59B84A00E8954C /* 3DTouchDemo.h */,
+				69ECC5241C59B84A00E8954C /* 3DTouchDemo.m */,
+				69ECC5251C59B84A00E8954C /* 3DTouchDemo.xib */,
+				69ECC5261C59B84A00E8954C /* PeekViewController.h */,
+				69ECC5271C59B84A00E8954C /* PeekViewController.m */,
+				69ECC5281C59B84A00E8954C /* PeekViewController.xib */,
+				69ECC5291C59B84A00E8954C /* PopViewController.h */,
+				69ECC52A1C59B84A00E8954C /* PopViewController.m */,
+				69ECC52B1C59B84A00E8954C /* PopViewController.xib */,
+				69ECC53D1C59B86300E8954C /* Cells */,
+			);
+			name = 3DTouchDemo;
+			sourceTree = "<group>";
+		};
+		69ECC53D1C59B86300E8954C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				69ECC52C1C59B84A00E8954C /* OneCell.h */,
+				69ECC52D1C59B84A00E8954C /* OneCell.m */,
+				69ECC52E1C59B84A00E8954C /* OneCell.xib */,
+				69ECC52F1C59B84A00E8954C /* TwoCell.h */,
+				69ECC5301C59B84A00E8954C /* TwoCell.m */,
+				69ECC5311C59B84A00E8954C /* TwoCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		69F2CD551C572779008BF43D /* YaweiTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +228,7 @@
 				69F2CD7E1C572779008BF43D /* ViewController.h */,
 				69F2CD7F1C572779008BF43D /* ViewController.m */,
 				69F2CD801C572779008BF43D /* ViewController.xib */,
+				69ECC53C1C59B85200E8954C /* 3DTouchDemo */,
 				69F2CDAE1C572945008BF43D /* WhiteBoardDemo */,
 				69F2CDAC1C572903008BF43D /* CuteView */,
 				69F2CDAD1C57291F008BF43D /* PickerViewDemo */,
@@ -390,13 +446,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69ECC5371C59B84B00E8954C /* PopViewController.xib in Resources */,
 				69F2CD9F1C572779008BF43D /* WhiteBoardDemo.xib in Resources */,
 				69F2CD951C572779008BF43D /* Tab2ViewController.xib in Resources */,
 				69F2CD8C1C572779008BF43D /* CuteViewController.xib in Resources */,
 				69F2CD851C572779008BF43D /* Assets.xcassets in Resources */,
 				69F2CD9D1C572779008BF43D /* ViewController.xib in Resources */,
+				69ECC5331C59B84B00E8954C /* 3DTouchDemo.xib in Resources */,
 				69F2CD931C572779008BF43D /* PickerViewDemo.xib in Resources */,
+				69ECC53B1C59B84B00E8954C /* TwoCell.xib in Resources */,
+				69ECC5351C59B84B00E8954C /* PeekViewController.xib in Resources */,
 				69F2CD971C572779008BF43D /* Tab3ViewController.xib in Resources */,
+				69ECC5391C59B84B00E8954C /* OneCell.xib in Resources */,
 				69F2CD891C572779008BF43D /* CellViewCollectionViewCell.xib in Resources */,
 				69F2CDAB1C5728E3008BF43D /* LaunchScreen.storyboard in Resources */,
 				69F2CD991C572779008BF43D /* Tab4CollectionViewController.xib in Resources */,
@@ -429,10 +490,15 @@
 				69F2CD941C572779008BF43D /* Tab2ViewController.m in Sources */,
 				69F2CD881C572779008BF43D /* CellViewCollectionViewCell.m in Sources */,
 				69F2CD8F1C572779008BF43D /* Line.m in Sources */,
+				69ECC5361C59B84B00E8954C /* PopViewController.m in Sources */,
+				69ECC5381C59B84B00E8954C /* OneCell.m in Sources */,
 				69F2CD9A1C572779008BF43D /* TouchDrawView.m in Sources */,
 				69F2CD981C572779008BF43D /* Tab4CollectionViewController.m in Sources */,
+				69ECC53A1C59B84B00E8954C /* TwoCell.m in Sources */,
+				69ECC5341C59B84B00E8954C /* PeekViewController.m in Sources */,
 				69F2CD911C572779008BF43D /* MyCuteView.m in Sources */,
 				69F2CD901C572779008BF43D /* main.m in Sources */,
+				69ECC5321C59B84A00E8954C /* 3DTouchDemo.m in Sources */,
 				69F2CD961C572779008BF43D /* Tab3ViewController.m in Sources */,
 				69F2CD8A1C572779008BF43D /* ColorPicker.m in Sources */,
 				69F2CDA71C5728AB008BF43D /* UIButton+CountDown.m in Sources */,

@@ -10,6 +10,7 @@
 #import "PickerViewDemo.h"
 #import "WhiteBoardDemo.h"
 #import "CuteViewController.h"
+#import "3DTouchDemo.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -41,6 +42,7 @@
     [self.itemsArray addObject:@"PickerViewDemo"];
     [self.itemsArray addObject:@"WhiteBoardDemo"];
     [self.itemsArray addObject:@"MyCuteView"];
+    [self.itemsArray addObject:@"3DTouchDemo"];
 }
 - (void)initTableView{
     self.tableView.dataSource = self;
@@ -75,6 +77,11 @@
     else if(indexPath.row == 2){//cute view
         UIViewController *controller = [[CuteViewController alloc] initWithNibName:@"CuteViewController" bundle:nil];
         [controller.navigationItem setTitle:@"MyCuteView"];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+    else if(indexPath.row == 3){//cute view
+        UIViewController *controller = [[_DTouchDemo alloc] initWithNibName:@"3DTouchDemo" bundle:nil];
+        [controller.navigationItem setTitle:@"3DTouchDemo"];
         [self.navigationController pushViewController:controller animated:YES];
     }
     
