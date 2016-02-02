@@ -15,6 +15,7 @@
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *itemsArray;
+//@property (nonatomic, copy) void(^Blcok)();
 
 @end
 
@@ -27,9 +28,20 @@
     
     [self initItems];
     [self initTableView];
+    
+//    [self testBlock];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+//- (void)testBlock{//对文件-fno-objc-arc开启MRC
+//    int a = 10;
+//    void (^block)() = ^{ NSLog(@"I am block %d", a);};//如果不引用外部变量a,ARC和MRC情况下都是__NSGlobalBlock__，引用a时MRC情况下为__NSStackBlock__，ARC情况下为__NSMallocBlock__
+//    block();
+//    
+//    self.Blcok = ^{ NSLog(@"I am block %d", a);};//如果不引用外部变量a,ARC和MRC情况下都是__NSGlobalBlock__，引用a时MRC情况下与OC对象一样为__NSMallocBlock__，ARC情况下为__NSMallocBlock__
+//    self.Blcok();
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
