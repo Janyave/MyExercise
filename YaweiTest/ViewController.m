@@ -11,6 +11,7 @@
 #import "WhiteBoardDemo.h"
 #import "CuteViewController.h"
 #import "3DTouchDemo.h"
+#import "PersistentDemo.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -55,6 +56,7 @@
     [self.itemsArray addObject:@"WhiteBoardDemo"];
     [self.itemsArray addObject:@"MyCuteView"];
     [self.itemsArray addObject:@"3DTouchDemo"];
+    [self.itemsArray addObject:@"PersistentDemo"];
 }
 - (void)initTableView{
     self.tableView.dataSource = self;
@@ -91,9 +93,14 @@
         [controller.navigationItem setTitle:@"MyCuteView"];
         [self.navigationController pushViewController:controller animated:YES];
     }
-    else if(indexPath.row == 3){//cute view
+    else if(indexPath.row == 3){//3D Touch demo
         UIViewController *controller = [[_DTouchDemo alloc] initWithNibName:@"3DTouchDemo" bundle:nil];
         [controller.navigationItem setTitle:@"3DTouchDemo"];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+    else if(indexPath.row == 4){//persistent demo
+        UIViewController *controller = [[PersistentDemo alloc] initWithNibName:@"PersistentDemo" bundle:nil];
+        [controller.navigationItem setTitle:@"PersistentDemo"];
         [self.navigationController pushViewController:controller animated:YES];
     }
     

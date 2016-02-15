@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69E459041C62F48B002B9801 /* PersistentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E459021C62F48B002B9801 /* PersistentDemo.m */; };
+		69E459051C62F48B002B9801 /* PersistentDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E459031C62F48B002B9801 /* PersistentDemo.xib */; };
+		69E459081C6339C7002B9801 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E459071C6339C7002B9801 /* libz.tbd */; };
+		69E4590A1C6339D6002B9801 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E459091C6339D6002B9801 /* libsqlite3.0.tbd */; };
 		69E600B51C54F2D9003403F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E600B41C54F2D9003403F7 /* QuartzCore.framework */; };
 		69ECC5321C59B84A00E8954C /* 3DTouchDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ECC5241C59B84A00E8954C /* 3DTouchDemo.m */; };
 		69ECC5331C59B84B00E8954C /* 3DTouchDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ECC5251C59B84A00E8954C /* 3DTouchDemo.xib */; };
@@ -64,6 +68,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69E459011C62F48B002B9801 /* PersistentDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentDemo.h; sourceTree = "<group>"; };
+		69E459021C62F48B002B9801 /* PersistentDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentDemo.m; sourceTree = "<group>"; };
+		69E459031C62F48B002B9801 /* PersistentDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersistentDemo.xib; sourceTree = "<group>"; };
+		69E459071C6339C7002B9801 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		69E459091C6339D6002B9801 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		69E58F0C1C45EC7A007F9876 /* YaweiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaweiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E58F251C45EC7A007F9876 /* YaweiTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaweiTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E58F301C45EC7A007F9876 /* YaweiTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaweiTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +142,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E4590A1C6339D6002B9801 /* libsqlite3.0.tbd in Frameworks */,
+				69E459081C6339C7002B9801 /* libz.tbd in Frameworks */,
 				69E600B51C54F2D9003403F7 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,9 +165,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69E459061C62F48F002B9801 /* PersistentDemo */ = {
+			isa = PBXGroup;
+			children = (
+				69E459011C62F48B002B9801 /* PersistentDemo.h */,
+				69E459021C62F48B002B9801 /* PersistentDemo.m */,
+				69E459031C62F48B002B9801 /* PersistentDemo.xib */,
+			);
+			name = PersistentDemo;
+			sourceTree = "<group>";
+		};
 		69E58F031C45EC7A007F9876 = {
 			isa = PBXGroup;
 			children = (
+				69E459091C6339D6002B9801 /* libsqlite3.0.tbd */,
+				69E459071C6339C7002B9801 /* libz.tbd */,
 				69F2CD551C572779008BF43D /* YaweiTest */,
 				69E600B41C54F2D9003403F7 /* QuartzCore.framework */,
 				69E58F0D1C45EC7A007F9876 /* Products */,
@@ -228,6 +251,7 @@
 				69F2CD7E1C572779008BF43D /* ViewController.h */,
 				69F2CD7F1C572779008BF43D /* ViewController.m */,
 				69F2CD801C572779008BF43D /* ViewController.xib */,
+				69E459061C62F48F002B9801 /* PersistentDemo */,
 				69ECC53C1C59B85200E8954C /* 3DTouchDemo */,
 				69F2CDAE1C572945008BF43D /* WhiteBoardDemo */,
 				69F2CDAC1C572903008BF43D /* CuteView */,
@@ -455,6 +479,7 @@
 				69ECC5331C59B84B00E8954C /* 3DTouchDemo.xib in Resources */,
 				69F2CD931C572779008BF43D /* PickerViewDemo.xib in Resources */,
 				69ECC53B1C59B84B00E8954C /* TwoCell.xib in Resources */,
+				69E459051C62F48B002B9801 /* PersistentDemo.xib in Resources */,
 				69ECC5351C59B84B00E8954C /* PeekViewController.xib in Resources */,
 				69F2CD971C572779008BF43D /* Tab3ViewController.xib in Resources */,
 				69ECC5391C59B84B00E8954C /* OneCell.xib in Resources */,
@@ -504,6 +529,7 @@
 				69F2CDA71C5728AB008BF43D /* UIButton+CountDown.m in Sources */,
 				69F2CD9C1C572779008BF43D /* ViewController.m in Sources */,
 				69F2CD9E1C572779008BF43D /* WhiteBoardDemo.m in Sources */,
+				69E459041C62F48B002B9801 /* PersistentDemo.m in Sources */,
 				69F2CD841C572779008BF43D /* AppDelegate.m in Sources */,
 				69F2CD8D1C572779008BF43D /* FlowLayout.m in Sources */,
 			);
