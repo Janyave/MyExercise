@@ -12,6 +12,7 @@
 #import "CuteViewController.h"
 #import "3DTouchDemo.h"
 #import "PersistentDemo.h"
+#import "VideoPlayerDemoViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -57,6 +58,7 @@
     [self.itemsArray addObject:@"MyCuteView"];
     [self.itemsArray addObject:@"3DTouchDemo"];
     [self.itemsArray addObject:@"PersistentDemo"];
+    [self.itemsArray addObject:@"VideoPlayerDemo"];
 }
 - (void)initTableView{
     self.tableView.dataSource = self;
@@ -102,6 +104,11 @@
         UIViewController *controller = [[PersistentDemo alloc] initWithNibName:@"PersistentDemo" bundle:nil];
         [controller.navigationItem setTitle:@"PersistentDemo"];
         [self.navigationController pushViewController:controller animated:YES];
+    }
+    else if(indexPath.row == 5){
+        UIViewController *contorller = [[VideoPlayerDemoViewController alloc] initWithNibName:@"VideoPlayerDemoViewController" bundle:nil];
+        [contorller.navigationItem setTitle:@"VideoPlayerDemo"];
+        [self.navigationController pushViewController:contorller animated:YES];
     }
     
 }

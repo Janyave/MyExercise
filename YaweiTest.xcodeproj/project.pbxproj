@@ -22,6 +22,9 @@
 		69ECC5391C59B84B00E8954C /* OneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ECC52E1C59B84A00E8954C /* OneCell.xib */; };
 		69ECC53A1C59B84B00E8954C /* TwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ECC5301C59B84A00E8954C /* TwoCell.m */; };
 		69ECC53B1C59B84B00E8954C /* TwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ECC5311C59B84A00E8954C /* TwoCell.xib */; };
+		69F2CB3A1C9BDB3A00BCC284 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CB391C9BDB3A00BCC284 /* PlayerView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		69F2CB3F1C9BE91C00BCC284 /* VideoPlayerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CB3D1C9BE91C00BCC284 /* VideoPlayerDemoViewController.m */; };
+		69F2CB401C9BE91C00BCC284 /* VideoPlayerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CB3E1C9BE91C00BCC284 /* VideoPlayerDemoViewController.xib */; };
 		69F2CD841C572779008BF43D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD571C572779008BF43D /* AppDelegate.m */; };
 		69F2CD851C572779008BF43D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CD581C572779008BF43D /* Assets.xcassets */; };
 		69F2CD881C572779008BF43D /* CellViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CD5E1C572779008BF43D /* CellViewCollectionViewCell.m */; };
@@ -92,6 +95,11 @@
 		69ECC52F1C59B84A00E8954C /* TwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoCell.h; sourceTree = "<group>"; };
 		69ECC5301C59B84A00E8954C /* TwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoCell.m; sourceTree = "<group>"; };
 		69ECC5311C59B84A00E8954C /* TwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoCell.xib; sourceTree = "<group>"; };
+		69F2CB381C9BDB3A00BCC284 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		69F2CB391C9BDB3A00BCC284 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		69F2CB3C1C9BE91C00BCC284 /* VideoPlayerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerDemoViewController.h; sourceTree = "<group>"; };
+		69F2CB3D1C9BE91C00BCC284 /* VideoPlayerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerDemoViewController.m; sourceTree = "<group>"; };
+		69F2CB3E1C9BE91C00BCC284 /* VideoPlayerDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayerDemoViewController.xib; sourceTree = "<group>"; };
 		69F2CD561C572779008BF43D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69F2CD571C572779008BF43D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		69F2CD581C572779008BF43D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -226,6 +234,26 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		69F2CB3B1C9BDB4C00BCC284 /* VideoPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CB3C1C9BE91C00BCC284 /* VideoPlayerDemoViewController.h */,
+				69F2CB3D1C9BE91C00BCC284 /* VideoPlayerDemoViewController.m */,
+				69F2CB3E1C9BE91C00BCC284 /* VideoPlayerDemoViewController.xib */,
+				69F2CB411C9BE92900BCC284 /* PlayerView */,
+			);
+			name = VideoPlayerDemo;
+			sourceTree = "<group>";
+		};
+		69F2CB411C9BE92900BCC284 /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				69F2CB381C9BDB3A00BCC284 /* PlayerView.h */,
+				69F2CB391C9BDB3A00BCC284 /* PlayerView.m */,
+			);
+			name = PlayerView;
+			sourceTree = "<group>";
+		};
 		69F2CD551C572779008BF43D /* YaweiTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +283,7 @@
 				69ECC53C1C59B85200E8954C /* 3DTouchDemo */,
 				69F2CDAE1C572945008BF43D /* WhiteBoardDemo */,
 				69F2CDAC1C572903008BF43D /* CuteView */,
+				69F2CB3B1C9BDB4C00BCC284 /* VideoPlayerDemo */,
 				69F2CDAD1C57291F008BF43D /* PickerViewDemo */,
 			);
 			name = "条目一";
@@ -482,6 +511,7 @@
 				69E459051C62F48B002B9801 /* PersistentDemo.xib in Resources */,
 				69ECC5351C59B84B00E8954C /* PeekViewController.xib in Resources */,
 				69F2CD971C572779008BF43D /* Tab3ViewController.xib in Resources */,
+				69F2CB401C9BE91C00BCC284 /* VideoPlayerDemoViewController.xib in Resources */,
 				69ECC5391C59B84B00E8954C /* OneCell.xib in Resources */,
 				69F2CD891C572779008BF43D /* CellViewCollectionViewCell.xib in Resources */,
 				69F2CDAB1C5728E3008BF43D /* LaunchScreen.storyboard in Resources */,
@@ -512,6 +542,7 @@
 			files = (
 				69F2CD921C572779008BF43D /* PickerViewDemo.m in Sources */,
 				69F2CD8B1C572779008BF43D /* CuteViewController.m in Sources */,
+				69F2CB3F1C9BE91C00BCC284 /* VideoPlayerDemoViewController.m in Sources */,
 				69F2CD941C572779008BF43D /* Tab2ViewController.m in Sources */,
 				69F2CD881C572779008BF43D /* CellViewCollectionViewCell.m in Sources */,
 				69F2CD8F1C572779008BF43D /* Line.m in Sources */,
@@ -531,6 +562,7 @@
 				69F2CD9E1C572779008BF43D /* WhiteBoardDemo.m in Sources */,
 				69E459041C62F48B002B9801 /* PersistentDemo.m in Sources */,
 				69F2CD841C572779008BF43D /* AppDelegate.m in Sources */,
+				69F2CB3A1C9BDB3A00BCC284 /* PlayerView.m in Sources */,
 				69F2CD8D1C572779008BF43D /* FlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
