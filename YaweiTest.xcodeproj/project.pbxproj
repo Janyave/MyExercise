@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69DA8FFB1CB6065400EE115E /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DA8FFA1CB6065400EE115E /* UIImage+GIF.m */; };
 		69E459041C62F48B002B9801 /* PersistentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E459021C62F48B002B9801 /* PersistentDemo.m */; };
 		69E459051C62F48B002B9801 /* PersistentDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E459031C62F48B002B9801 /* PersistentDemo.xib */; };
 		69E459081C6339C7002B9801 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E459071C6339C7002B9801 /* libz.tbd */; };
@@ -22,6 +23,10 @@
 		69ECC5391C59B84B00E8954C /* OneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ECC52E1C59B84A00E8954C /* OneCell.xib */; };
 		69ECC53A1C59B84B00E8954C /* TwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ECC5301C59B84A00E8954C /* TwoCell.m */; };
 		69ECC53B1C59B84B00E8954C /* TwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ECC5311C59B84A00E8954C /* TwoCell.xib */; };
+		69ECCB251CB512660021DD7D /* GIfDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ECCB231CB512660021DD7D /* GIfDemoViewController.m */; };
+		69ECCB261CB512660021DD7D /* GIfDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ECCB241CB512660021DD7D /* GIfDemoViewController.xib */; };
+		69ECCB2A1CB5129B0021DD7D /* GifView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ECCB291CB5129B0021DD7D /* GifView.m */; };
+		69ECCB2C1CB528E00021DD7D /* testGif.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 69ECCB2B1CB528E00021DD7D /* testGif.jpg */; };
 		69F2CB3A1C9BDB3A00BCC284 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CB391C9BDB3A00BCC284 /* PlayerView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		69F2CB3F1C9BE91C00BCC284 /* VideoPlayerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CB3D1C9BE91C00BCC284 /* VideoPlayerDemoViewController.m */; };
 		69F2CB401C9BE91C00BCC284 /* VideoPlayerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CB3E1C9BE91C00BCC284 /* VideoPlayerDemoViewController.xib */; };
@@ -71,6 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69DA8FF91CB6065400EE115E /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		69DA8FFA1CB6065400EE115E /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
 		69E459011C62F48B002B9801 /* PersistentDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentDemo.h; sourceTree = "<group>"; };
 		69E459021C62F48B002B9801 /* PersistentDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentDemo.m; sourceTree = "<group>"; };
 		69E459031C62F48B002B9801 /* PersistentDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersistentDemo.xib; sourceTree = "<group>"; };
@@ -95,6 +102,12 @@
 		69ECC52F1C59B84A00E8954C /* TwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoCell.h; sourceTree = "<group>"; };
 		69ECC5301C59B84A00E8954C /* TwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoCell.m; sourceTree = "<group>"; };
 		69ECC5311C59B84A00E8954C /* TwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoCell.xib; sourceTree = "<group>"; };
+		69ECCB221CB512660021DD7D /* GIfDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIfDemoViewController.h; sourceTree = "<group>"; };
+		69ECCB231CB512660021DD7D /* GIfDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIfDemoViewController.m; sourceTree = "<group>"; };
+		69ECCB241CB512660021DD7D /* GIfDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIfDemoViewController.xib; sourceTree = "<group>"; };
+		69ECCB281CB5129B0021DD7D /* GifView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifView.h; sourceTree = "<group>"; };
+		69ECCB291CB5129B0021DD7D /* GifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifView.m; sourceTree = "<group>"; };
+		69ECCB2B1CB528E00021DD7D /* testGif.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testGif.jpg; sourceTree = "<group>"; };
 		69F2CB381C9BDB3A00BCC284 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
 		69F2CB391C9BDB3A00BCC284 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
 		69F2CB3C1C9BE91C00BCC284 /* VideoPlayerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerDemoViewController.h; sourceTree = "<group>"; };
@@ -173,6 +186,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69DA8FF81CB6054E00EE115E /* UIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				69DA8FF91CB6065400EE115E /* UIImage+GIF.h */,
+				69DA8FFA1CB6065400EE115E /* UIImage+GIF.m */,
+			);
+			path = UIExtension;
+			sourceTree = "<group>";
+		};
 		69E459061C62F48F002B9801 /* PersistentDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,8 +208,10 @@
 		69E58F031C45EC7A007F9876 = {
 			isa = PBXGroup;
 			children = (
+				69DA8FF81CB6054E00EE115E /* UIExtension */,
 				69E459091C6339D6002B9801 /* libsqlite3.0.tbd */,
 				69E459071C6339C7002B9801 /* libz.tbd */,
+				69ECCB2B1CB528E00021DD7D /* testGif.jpg */,
 				69F2CD551C572779008BF43D /* YaweiTest */,
 				69E600B41C54F2D9003403F7 /* QuartzCore.framework */,
 				69E58F0D1C45EC7A007F9876 /* Products */,
@@ -232,6 +256,18 @@
 				69ECC5311C59B84A00E8954C /* TwoCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		69ECCB271CB5126C0021DD7D /* GifDemo */ = {
+			isa = PBXGroup;
+			children = (
+				69ECCB221CB512660021DD7D /* GIfDemoViewController.h */,
+				69ECCB231CB512660021DD7D /* GIfDemoViewController.m */,
+				69ECCB241CB512660021DD7D /* GIfDemoViewController.xib */,
+				69ECCB281CB5129B0021DD7D /* GifView.h */,
+				69ECCB291CB5129B0021DD7D /* GifView.m */,
+			);
+			name = GifDemo;
 			sourceTree = "<group>";
 		};
 		69F2CB3B1C9BDB4C00BCC284 /* VideoPlayerDemo */ = {
@@ -279,6 +315,7 @@
 				69F2CD7E1C572779008BF43D /* ViewController.h */,
 				69F2CD7F1C572779008BF43D /* ViewController.m */,
 				69F2CD801C572779008BF43D /* ViewController.xib */,
+				69ECCB271CB5126C0021DD7D /* GifDemo */,
 				69E459061C62F48F002B9801 /* PersistentDemo */,
 				69ECC53C1C59B85200E8954C /* 3DTouchDemo */,
 				69F2CDAE1C572945008BF43D /* WhiteBoardDemo */,
@@ -503,8 +540,10 @@
 				69F2CD9F1C572779008BF43D /* WhiteBoardDemo.xib in Resources */,
 				69F2CD951C572779008BF43D /* Tab2ViewController.xib in Resources */,
 				69F2CD8C1C572779008BF43D /* CuteViewController.xib in Resources */,
+				69ECCB2C1CB528E00021DD7D /* testGif.jpg in Resources */,
 				69F2CD851C572779008BF43D /* Assets.xcassets in Resources */,
 				69F2CD9D1C572779008BF43D /* ViewController.xib in Resources */,
+				69ECCB261CB512660021DD7D /* GIfDemoViewController.xib in Resources */,
 				69ECC5331C59B84B00E8954C /* 3DTouchDemo.xib in Resources */,
 				69F2CD931C572779008BF43D /* PickerViewDemo.xib in Resources */,
 				69ECC53B1C59B84B00E8954C /* TwoCell.xib in Resources */,
@@ -540,6 +579,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DA8FFB1CB6065400EE115E /* UIImage+GIF.m in Sources */,
 				69F2CD921C572779008BF43D /* PickerViewDemo.m in Sources */,
 				69F2CD8B1C572779008BF43D /* CuteViewController.m in Sources */,
 				69F2CB3F1C9BE91C00BCC284 /* VideoPlayerDemoViewController.m in Sources */,
@@ -550,6 +590,7 @@
 				69ECC5381C59B84B00E8954C /* OneCell.m in Sources */,
 				69F2CD9A1C572779008BF43D /* TouchDrawView.m in Sources */,
 				69F2CD981C572779008BF43D /* Tab4CollectionViewController.m in Sources */,
+				69ECCB251CB512660021DD7D /* GIfDemoViewController.m in Sources */,
 				69ECC53A1C59B84B00E8954C /* TwoCell.m in Sources */,
 				69ECC5341C59B84B00E8954C /* PeekViewController.m in Sources */,
 				69F2CD911C572779008BF43D /* MyCuteView.m in Sources */,
@@ -564,6 +605,7 @@
 				69F2CD841C572779008BF43D /* AppDelegate.m in Sources */,
 				69F2CB3A1C9BDB3A00BCC284 /* PlayerView.m in Sources */,
 				69F2CD8D1C572779008BF43D /* FlowLayout.m in Sources */,
+				69ECCB2A1CB5129B0021DD7D /* GifView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

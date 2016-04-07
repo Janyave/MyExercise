@@ -13,7 +13,8 @@
 #import "3DTouchDemo.h"
 #import "PersistentDemo.h"
 #import "VideoPlayerDemoViewController.h"
-
+#import "GIfDemoViewController.h"
+#import <asl.h>
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *itemsArray;
@@ -59,6 +60,7 @@
     [self.itemsArray addObject:@"3DTouchDemo"];
     [self.itemsArray addObject:@"PersistentDemo"];
     [self.itemsArray addObject:@"VideoPlayerDemo"];
+    [self.itemsArray addObject:@"gifDemo"];
 }
 - (void)initTableView{
     self.tableView.dataSource = self;
@@ -109,6 +111,11 @@
         UIViewController *contorller = [[VideoPlayerDemoViewController alloc] initWithNibName:@"VideoPlayerDemoViewController" bundle:nil];
         [contorller.navigationItem setTitle:@"VideoPlayerDemo"];
         [self.navigationController pushViewController:contorller animated:YES];
+    }
+    else if(indexPath.row == 6){
+        UIViewController *controller = [[GIfDemoViewController alloc] initWithNibName:@"GIfDemoViewController" bundle:nil];
+        [controller.navigationItem setTitle:@"GifDemo"];
+        [self.navigationController pushViewController:controller animated:YES];
     }
     
 }
