@@ -15,6 +15,7 @@
 #import "VideoPlayerDemoViewController.h"
 #import "GIfDemoViewController.h"
 #import <asl.h>
+#import "XmlParserViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *itemsArray;
@@ -61,6 +62,7 @@
     [self.itemsArray addObject:@"PersistentDemo"];
     [self.itemsArray addObject:@"VideoPlayerDemo"];
     [self.itemsArray addObject:@"gifDemo"];
+    [self.itemsArray addObject:@"XmlParserDemo"];
 }
 - (void)initTableView{
     self.tableView.dataSource = self;
@@ -115,6 +117,11 @@
     else if(indexPath.row == 6){
         UIViewController *controller = [[GIfDemoViewController alloc] initWithNibName:@"GIfDemoViewController" bundle:nil];
         [controller.navigationItem setTitle:@"GifDemo"];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+    else if(indexPath.row == 7){
+        UIViewController *controller = [[XmlParserViewController alloc] initWithNibName:@"XmlParserViewController" bundle:nil];
+        [controller.navigationItem setTitle:@"XmlParserDemo"];
         [self.navigationController pushViewController:controller animated:YES];
     }
     

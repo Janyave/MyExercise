@@ -54,6 +54,9 @@
             NSDictionary *dict = (NSDictionary*)CFBridgingRelease(CGImageSourceCopyPropertiesAtIndex(gifSource, i, NULL));
             NSDictionary *gifDict = [dict valueForKey:(NSString*)kCGImagePropertyGIFDictionary];
             NSNumber *delayTime = [gifDict valueForKey:(NSString*)kCGImagePropertyGIFUnclampedDelayTime];
+            if (delayTime == nil || [delayTime doubleValue] == 0) {
+                delayTime = [gifDict valueForKey:(NSString*)kCGImagePropertyGIFDelayTime];
+            }
             [delayTimes addObject:delayTime];
             totalTime += [delayTime floatValue];
         }
