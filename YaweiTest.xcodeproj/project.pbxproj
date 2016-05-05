@@ -58,6 +58,7 @@
 		69F2CD9F1C572779008BF43D /* WhiteBoardDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CD831C572779008BF43D /* WhiteBoardDemo.xib */; };
 		69F2CDA71C5728AB008BF43D /* UIButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F2CDA61C5728AB008BF43D /* UIButton+CountDown.m */; };
 		69F2CDAB1C5728E3008BF43D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F2CDA91C5728E3008BF43D /* LaunchScreen.storyboard */; };
+		69F9EA871CDB2B4C00913DF3 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F9EA861CDB2B4C00913DF3 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,8 @@
 		69F2CDA51C5728AB008BF43D /* UIButton+CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CountDown.h"; sourceTree = "<group>"; };
 		69F2CDA61C5728AB008BF43D /* UIButton+CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CountDown.m"; sourceTree = "<group>"; };
 		69F2CDAA1C5728E3008BF43D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69F9EA851CDB2B4C00913DF3 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		69F9EA861CDB2B4C00913DF3 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +209,8 @@
 				69DE1D8B1CCE0615006F0007 /* XmlParserViewController.h */,
 				69DE1D8C1CCE0615006F0007 /* XmlParserViewController.m */,
 				69DE1D8E1CCE0653006F0007 /* XmlParserViewController.xib */,
+				69F9EA851CDB2B4C00913DF3 /* Item.h */,
+				69F9EA861CDB2B4C00913DF3 /* Item.m */,
 			);
 			name = XmlParserDemo;
 			sourceTree = "<group>";
@@ -607,6 +612,7 @@
 				69ECC5381C59B84B00E8954C /* OneCell.m in Sources */,
 				69F2CD9A1C572779008BF43D /* TouchDrawView.m in Sources */,
 				69F2CD981C572779008BF43D /* Tab4CollectionViewController.m in Sources */,
+				69F9EA871CDB2B4C00913DF3 /* Item.m in Sources */,
 				69ECCB251CB512660021DD7D /* GIfDemoViewController.m in Sources */,
 				69ECC53A1C59B84B00E8954C /* TwoCell.m in Sources */,
 				69ECC5341C59B84B00E8954C /* PeekViewController.m in Sources */,
