@@ -9,12 +9,19 @@
 #import "XmlParserViewController.h"
 #import "Item.h"
 
+#import <libxml2/libxml/parser.h>
+#import <libxml2/libxml/tree.h>
+#import <libxml2/libxml/xpath.h>
+
+
 
 #define ITEM @"item"
 #define TITLE @"title"
 #define LINK @"link"
 #define DESCRIPTION @"description"
 #define PUBDATE @"pubDate"
+
+
 
 @interface XmlParserViewController ()<NSURLConnectionDelegate,NSURLConnectionDataDelegate,NSXMLParserDelegate>
 //下载下来的xmldata
@@ -41,10 +48,9 @@
     _tableview.dataSource = self;
     
     _dataArr = [[NSMutableArray alloc] initWithObjects:@"NSXMLParser", @"libxml2", @"TBXMLParser", nil];
-    
-    
     _items = [NSMutableArray array];
 }
+
 
 - (void)downloadXmlDataInNewThreadWithUrl:(NSURL *)aUrl{
     if (!self.xmlData) {//如果xmldata不存在则下载
@@ -69,9 +75,13 @@
         NSXMLParser *parser = [[NSXMLParser alloc] initWithData:self.xmlData];
         parser.delegate = self;
         [parser parse];
+    } else if (self.choosedIndex == 1){
+        [self parseXMLDataByLibXml2];
     }
     
 }
+
+
 
 #pragma mark - tableview datasoure && delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -92,6 +102,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     self.choosedIndex = indexPath.row;
     [self downloadXmlDataInNewThreadWithUrl:[NSURL URLWithString:@"http://images.apple.com/main/rss/hotnews/hotnews.rss"]];
+    //libxml2有SAX和DOM两种方式解析，其中SAX可以边下边解析，demo中给出的是DOM方式(加入libxml2需要设置header search path)
 }
 
 #pragma mark - NSurlconnection delegate
@@ -145,6 +156,72 @@
 
 - (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError{
     
+}
+
+#pragma mark - libxml2 parser function
+xmlNode* findElement(xmlNode *child, xmlChar *elementName) {
+    
+    while (child != NULL) {
+        if (child->type == XML_ELEMENT_NODE) {
+            if (strncmp(child->name, elementName, strlen(elementName)) == 0) {
+                return child;
+            }
+        }
+        child = child->next;
+    }
+    return NULL;
+    
+}
+
+xmlChar* findTextForFirstChild(xmlNode *parent, xmlChar *elementName){
+    xmlNode *child = findElement(parent->children, elementName);
+    if (child) {
+        xmlNode *text = child->children;
+        if (text && text->type == XML_TEXT_NODE) {
+            return text->content;
+        }
+    }
+    return NULL;
+}
+
+- (void)parseXMLDataByLibXml2{
+    xmlDoc *doc = xmlParseMemory(self.xmlData.bytes, (int)self.xmlData.length);
+    if (doc) {
+        xmlXPathContext *xPathCtx = xmlXPathNewContext(doc);
+        if (xPathCtx) {
+            xmlXPathObject *xPathObj = xmlXPathEvalExpression("///item", xPathCtx);//为什么要加斜杠？
+            if (xPathObj) {
+                xmlNodeSet *nodeSet = xPathObj->nodesetval;
+                for (int i = 0; i < nodeSet->nodeNr; i++) {
+                    xmlNode *node = nodeSet->nodeTab[i];
+                    
+                    Item *item = [[Item alloc] init];
+                    xmlChar *title = findTextForFirstChild(node, "title");
+                    if (title != NULL) {
+                        item.title = [NSString stringWithUTF8String:title];
+                    }
+                    xmlChar *link = findTextForFirstChild(node, "link");
+                    if (link != NULL) {
+                        item.link = [NSString stringWithUTF8String:link];
+                    }
+                    xmlChar *desc = findTextForFirstChild(node, "description");
+                    if (desc != NULL) {
+                        item.desc = [NSString stringWithUTF8String:desc];
+                    }
+                    xmlChar *pubDate = findTextForFirstChild(node, "pubDate");
+                    if (pubDate != NULL) {
+                        item.pubDate = [NSString stringWithUTF8String:pubDate];
+                    }
+                    
+                    [self.items addObject:item];
+                }
+                xmlXPathFreeObject(xPathObj);
+            }
+            xmlXPathFreeContext(xPathCtx);
+        }
+        xmlFreeDoc(doc);
+    }
+    self.isDone = YES;
 }
 
 @end
