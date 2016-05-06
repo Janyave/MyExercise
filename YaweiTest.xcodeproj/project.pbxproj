@@ -10,6 +10,9 @@
 		69DA8FFB1CB6065400EE115E /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DA8FFA1CB6065400EE115E /* UIImage+GIF.m */; };
 		69DE1D8D1CCE0615006F0007 /* XmlParserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DE1D8C1CCE0615006F0007 /* XmlParserViewController.m */; };
 		69DE1D8F1CCE0653006F0007 /* XmlParserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69DE1D8E1CCE0653006F0007 /* XmlParserViewController.xib */; };
+		69E00DF41CDC40EE00E42B77 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E00DF11CDC40EE00E42B77 /* TBXML.m */; };
+		69E00DF51CDC40EE00E42B77 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E00DF21CDC40EE00E42B77 /* TBXML+Compression.m */; };
+		69E00DF61CDC40EE00E42B77 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E00DF31CDC40EE00E42B77 /* TBXML+HTTP.m */; };
 		69E459041C62F48B002B9801 /* PersistentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E459021C62F48B002B9801 /* PersistentDemo.m */; };
 		69E459051C62F48B002B9801 /* PersistentDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E459031C62F48B002B9801 /* PersistentDemo.xib */; };
 		69E459081C6339C7002B9801 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E459071C6339C7002B9801 /* libz.tbd */; };
@@ -85,6 +88,12 @@
 		69DE1D8B1CCE0615006F0007 /* XmlParserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlParserViewController.h; sourceTree = "<group>"; };
 		69DE1D8C1CCE0615006F0007 /* XmlParserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlParserViewController.m; sourceTree = "<group>"; };
 		69DE1D8E1CCE0653006F0007 /* XmlParserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XmlParserViewController.xib; sourceTree = "<group>"; };
+		69E00DF11CDC40EE00E42B77 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		69E00DF21CDC40EE00E42B77 /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+Compression.m"; sourceTree = "<group>"; };
+		69E00DF31CDC40EE00E42B77 /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+HTTP.m"; sourceTree = "<group>"; };
+		69E00DF71CDC40F900E42B77 /* TBXML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		69E00DF81CDC40F900E42B77 /* TBXML+Compression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBXML+Compression.h"; sourceTree = "<group>"; };
+		69E00DF91CDC40F900E42B77 /* TBXML+HTTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBXML+HTTP.h"; sourceTree = "<group>"; };
 		69E459011C62F48B002B9801 /* PersistentDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentDemo.h; sourceTree = "<group>"; };
 		69E459021C62F48B002B9801 /* PersistentDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentDemo.m; sourceTree = "<group>"; };
 		69E459031C62F48B002B9801 /* PersistentDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersistentDemo.xib; sourceTree = "<group>"; };
@@ -214,8 +223,22 @@
 				69DE1D8E1CCE0653006F0007 /* XmlParserViewController.xib */,
 				69F9EA851CDB2B4C00913DF3 /* Item.h */,
 				69F9EA861CDB2B4C00913DF3 /* Item.m */,
+				69E00DF01CDC40DB00E42B77 /* TBXML */,
 			);
 			name = XmlParserDemo;
+			sourceTree = "<group>";
+		};
+		69E00DF01CDC40DB00E42B77 /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				69E00DF71CDC40F900E42B77 /* TBXML.h */,
+				69E00DF81CDC40F900E42B77 /* TBXML+Compression.h */,
+				69E00DF91CDC40F900E42B77 /* TBXML+HTTP.h */,
+				69E00DF11CDC40EE00E42B77 /* TBXML.m */,
+				69E00DF21CDC40EE00E42B77 /* TBXML+Compression.m */,
+				69E00DF31CDC40EE00E42B77 /* TBXML+HTTP.m */,
+			);
+			name = TBXML;
 			sourceTree = "<group>";
 		};
 		69E459061C62F48F002B9801 /* PersistentDemo */ = {
@@ -608,6 +631,7 @@
 				69DA8FFB1CB6065400EE115E /* UIImage+GIF.m in Sources */,
 				69F2CD921C572779008BF43D /* PickerViewDemo.m in Sources */,
 				69F2CD8B1C572779008BF43D /* CuteViewController.m in Sources */,
+				69E00DF41CDC40EE00E42B77 /* TBXML.m in Sources */,
 				69F2CB3F1C9BE91C00BCC284 /* VideoPlayerDemoViewController.m in Sources */,
 				69F2CD941C572779008BF43D /* Tab2ViewController.m in Sources */,
 				69F2CD881C572779008BF43D /* CellViewCollectionViewCell.m in Sources */,
@@ -620,6 +644,7 @@
 				69ECCB251CB512660021DD7D /* GIfDemoViewController.m in Sources */,
 				69ECC53A1C59B84B00E8954C /* TwoCell.m in Sources */,
 				69ECC5341C59B84B00E8954C /* PeekViewController.m in Sources */,
+				69E00DF51CDC40EE00E42B77 /* TBXML+Compression.m in Sources */,
 				69F2CD911C572779008BF43D /* MyCuteView.m in Sources */,
 				69F2CD901C572779008BF43D /* main.m in Sources */,
 				69ECC5321C59B84A00E8954C /* 3DTouchDemo.m in Sources */,
@@ -628,6 +653,7 @@
 				69F2CDA71C5728AB008BF43D /* UIButton+CountDown.m in Sources */,
 				69F2CD9C1C572779008BF43D /* ViewController.m in Sources */,
 				69F2CD9E1C572779008BF43D /* WhiteBoardDemo.m in Sources */,
+				69E00DF61CDC40EE00E42B77 /* TBXML+HTTP.m in Sources */,
 				69E459041C62F48B002B9801 /* PersistentDemo.m in Sources */,
 				69F2CD841C572779008BF43D /* AppDelegate.m in Sources */,
 				69F2CB3A1C9BDB3A00BCC284 /* PlayerView.m in Sources */,

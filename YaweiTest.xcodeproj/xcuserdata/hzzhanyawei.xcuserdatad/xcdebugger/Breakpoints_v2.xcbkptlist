@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YaweiTest/XmlParserViewController.m"
-            timestampString = "484194256.124737"
+            timestampString = "484197986.594767"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
             landmarkName = "-parseXMLDataByLibXml2"
             landmarkType = "5">
          </BreakpointContent>
@@ -154,12 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YaweiTest/XmlParserViewController.m"
-            timestampString = "484195922.718998"
+            timestampString = "484197986.594767"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "-parseXMLDataByLibXml2"
+            startingLineNumber = "264"
+            endingLineNumber = "264"
+            landmarkName = "-parseXMLByTBXml"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

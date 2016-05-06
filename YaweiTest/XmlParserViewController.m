@@ -13,7 +13,10 @@
 #import <libxml2/libxml/tree.h>
 #import <libxml2/libxml/xpath.h>
 
+#import "TBXML.h"
 
+
+#define CHANNEL @"channel"
 
 #define ITEM @"item"
 #define TITLE @"title"
@@ -77,6 +80,8 @@
         [parser parse];
     } else if (self.choosedIndex == 1){
         [self parseXMLDataByLibXml2];
+    } else if (self.choosedIndex ==2){
+        [self parseXMLByTBXml];
     }
     
 }
@@ -222,6 +227,42 @@ xmlChar* findTextForFirstChild(xmlNode *parent, xmlChar *elementName){
         xmlFreeDoc(doc);
     }
     self.isDone = YES;
+}
+
+#pragma mark - TBXML parser function
+- (void)parseXMLByTBXml{
+    TBXML *tbXml = [[TBXML alloc] initWithXMLData:self.xmlData];
+    TBXMLElement *root = tbXml.rootXMLElement;
+    if (root) {
+        TBXMLElement *channel = [TBXML childElementNamed:CHANNEL parentElement:root];
+        if (channel) {
+            TBXMLElement *node = [TBXML childElementNamed:ITEM parentElement:channel];
+            while (node != nil) {
+                Item *item = [[Item alloc] init];
+                TBXMLElement *title = [TBXML childElementNamed:TITLE parentElement:node];
+                if (title != nil) {
+                    item.title = [TBXML textForElement:title];
+                }
+                TBXMLElement *link = [TBXML childElementNamed:LINK parentElement:node];
+                if (link != nil) {
+                    item.link = [TBXML textForElement:link];
+                }
+                TBXMLElement *desc = [TBXML childElementNamed:DESCRIPTION parentElement:node];
+                if (desc != nil) {
+                    item.desc = [TBXML textForElement:desc];
+                }
+                TBXMLElement *pubDate = [TBXML childElementNamed:PUBDATE parentElement:node];
+                if (pubDate != nil) {
+                    item.pubDate = [TBXML textForElement:pubDate];
+                }
+                [self.items addObject:item];
+                node = [TBXML nextSiblingNamed:ITEM searchFromElement:node];
+            }
+        }
+    }
+    
+    self.isDone = YES;
+    
 }
 
 @end
